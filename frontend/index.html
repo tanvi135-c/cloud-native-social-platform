@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DiscussHub | Community</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">D</div>
+                <div>
+                    <strong>DiscussHub</strong>
+                    <span>Community</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-title">MAIN</p>
+
+                <a href="index.html" class="nav-item active">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="create-post.html" class="nav-item">
+                    <span>＋</span>
+                    Create Post
+                </a>
+
+            </div>
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-title">COMMUNITY</p>
+
+                <a href="#" class="nav-item">
+                    <span>◉</span>
+                    Discussions
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>★</span>
+                    Popular
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span>♧</span>
+                    Members
+                </a>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-user">
+
+                    <div class="avatar">
+                        T
+                    </div>
+
+                    <div>
+                        <strong id="sidebar-username">
+                            Guest
+                        </strong>
+
+                        <span id="sidebar-status">
+                            Not logged in
+                        </span>
+                    </div>
+
+                </div>
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()"
+                    id="logout-button">
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div>
+                    <h1>Community</h1>
+                    <p>Connect, share and start discussions.</p>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="icon-btn">
+                        🔔
+                    </button>
+
+                    <a href="create-post.html" class="primary-btn">
+                        + New Discussion
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- HERO -->
+            <section class="welcome-card">
+
+                <div>
+
+                    <span class="eyebrow">
+                        WELCOME TO DISCUSSHUB
+                    </span>
+
+                    <h2>
+                        What's on your mind?
+                    </h2>
+
+                    <p>
+                        Share ideas, ask questions and join conversations
+                        with the community.
+                    </p>
+
+                </div>
+
+                <a href="create-post.html" class="white-btn">
+                    Start a discussion
+                </a>
+
+            </section>
+
+
+            <!-- CONTENT GRID -->
+            <div class="content-grid">
+
+                <!-- FEED -->
+                <section class="feed-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            <h2>Latest Discussions</h2>
+                            <p>See what the community is talking about.</p>
+                        </div>
+
+                        <button
+                            class="filter-btn"
+                            onclick="loadPosts()">
+                            ↻ Refresh
+                        </button>
+
+                    </div>
+
+                    <div id="posts-container">
+
+                        <div class="loading">
+                            Loading discussions...
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RIGHT PANEL -->
+                <aside class="right-panel">
+
+                    <div class="side-card">
+
+                        <h3>Community Stats</h3>
+
+                        <div class="stat-row">
+                            <span>Discussions</span>
+                            <strong id="discussion-count">0</strong>
+                        </div>
+
+                        <div class="stat-row">
+                            <span>Active Community</span>
+                            <strong>Online</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="side-card">
+
+                        <h3>Quick Actions</h3>
+
+                        <a href="create-post.html"
+                           class="quick-action">
+                            <span class="quick-icon purple">
+                                +
+                            </span>
+
+                            <div>
+                                <strong>Create discussion</strong>
+                                <small>Share something new</small>
+                            </div>
+                        </a>
+
+                        <a href="dashboard.html"
+                           class="quick-action">
+
+                            <span class="quick-icon blue">
+                                ▦
+                            </span>
+
+                            <div>
+                                <strong>My dashboard</strong>
+                                <small>View your activity</small>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

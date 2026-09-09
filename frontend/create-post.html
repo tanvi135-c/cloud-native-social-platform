@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Create Discussion | DiscussHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    D
+                </div>
+
+                <div>
+                    <strong>DiscussHub</strong>
+                    <span>Community</span>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-title">MAIN</p>
+
+                <a href="index.html" class="nav-item">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="create-post.html"
+                   class="nav-item active">
+                    <span>＋</span>
+                    Create Post
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-user">
+
+                    <div class="avatar">
+                        T
+                    </div>
+
+                    <div>
+
+                        <strong id="sidebar-username">
+                            Guest
+                        </strong>
+
+                        <span>
+                            Community member
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Create Discussion</h1>
+
+                    <p>
+                        Start a new conversation with the community.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <section class="create-card">
+
+                <div class="create-header">
+
+                    <div class="create-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <h2>Start a discussion</h2>
+
+                        <p>
+                            Share your thoughts, questions or ideas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="create-post-form">
+
+                    <label>Discussion title</label>
+
+                    <input
+                        type="text"
+                        id="post-title"
+                        placeholder="What would you like to discuss?"
+                        maxlength="200"
+                        required>
+
+
+                    <label>Your message</label>
+
+                    <textarea
+                        id="post-content"
+                        rows="10"
+                        placeholder="Write your discussion here..."
+                        required></textarea>
+
+
+                    <div class="form-actions">
+
+                        <a
+                            href="index.html"
+                            class="secondary-btn">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="primary-btn">
+
+                            Publish Discussion
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                <p
+                    id="post-message"
+                    class="form-message">
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Discussion | DiscussHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    D
+                </div>
+
+                <div>
+                    <strong>DiscussHub</strong>
+                    <span>Community</span>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-title">MAIN</p>
+
+                <a href="index.html" class="nav-item">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="nav-item">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="create-post.html" class="nav-item">
+                    <span>＋</span>
+                    Create Post
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-user">
+
+                    <div class="avatar">
+                        T
+                    </div>
+
+                    <div>
+
+                        <strong id="sidebar-username">
+                            Guest
+                        </strong>
+
+                        <span>
+                            Community member
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <a
+                        href="index.html"
+                        class="back-link">
+
+                        ← Back to discussions
+
+                    </a>
+
+                    <h1>Discussion</h1>
+
+                </div>
+
+            </header>
+
+
+            <section id="single-post-container">
+
+                <div class="loading">
+                    Loading discussion...
+                </div>
+
+            </section>
+
+
+            <section class="comments-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>Comments</h2>
+
+                        <p>
+                            Join the conversation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="comment-form"
+                      class="comment-form">
+
+                    <textarea
+                        id="comment-content"
+                        rows="4"
+                        placeholder="Write a comment..."
+                        required></textarea>
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        Add Comment
+
+                    </button>
+
+                </form>
+
+
+                <div id="comments-container">
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

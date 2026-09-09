@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | DiscussHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    D
+                </div>
+
+                <div>
+                    <strong>DiscussHub</strong>
+                    <span>Community</span>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-section">
+
+                <p class="sidebar-title">MAIN</p>
+
+                <a href="index.html" class="nav-item">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="dashboard.html"
+                   class="nav-item active">
+
+                    <span>▦</span>
+                    Dashboard
+
+                </a>
+
+                <a href="create-post.html" class="nav-item">
+                    <span>＋</span>
+                    Create Post
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="sidebar-user">
+
+                    <div class="avatar">
+                        T
+                    </div>
+
+                    <div>
+
+                        <strong id="sidebar-username">
+                            Guest
+                        </strong>
+
+                        <span>
+                            Community member
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Dashboard</h1>
+
+                    <p>
+                        Your community activity at a glance.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <section class="dashboard-hero">
+
+                <div>
+
+                    <span class="eyebrow">
+                        YOUR COMMUNITY
+                    </span>
+
+                    <h2>
+                        Welcome back!
+                    </h2>
+
+                    <p>
+                        Keep sharing, discussing and connecting.
+                    </p>
+
+                </div>
+
+                <div class="dashboard-avatar">
+                    T
+                </div>
+
+            </section>
+
+
+            <section class="stats-grid">
+
+                <div class="dashboard-stat">
+
+                    <span class="stat-icon purple">
+                        ◉
+                    </span>
+
+                    <div>
+
+                        <small>Total Discussions</small>
+
+                        <strong id="dashboard-post-count">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <span class="stat-icon blue">
+                        💬
+                    </span>
+
+                    <div>
+
+                        <small>Community Status</small>
+
+                        <strong>Active</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <span class="stat-icon green">
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <small>API Status</small>
+
+                        <strong id="api-status">
+                            Checking...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="dashboard-panel">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <h2>Recent Discussions</h2>
+
+                        <p>
+                            Latest conversations in the community.
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="create-post.html"
+                        class="primary-btn">
+
+                        + New Post
+
+                    </a>
+
+                </div>
+
+
+                <div id="dashboard-posts">
+
+                    <div class="loading">
+                        Loading...
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
